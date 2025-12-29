@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Googlies – Booking Form</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    /* ================= GOOG LIES BOOKING FORM ================= */
+
+    .gl-booking-section {
+      background: #ffffff;
+      padding: 70px 20px;
+      margin-bottom: 50px;
+    }
+
+    .gl-booking-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .gl-booking-title h2 {
+      color: #c4161a;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .gl-booking-subtitle {
+      font-size: 16px;
+      color: #666;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .gl-booking-card {
+      max-width: 900px;
+      margin: auto;
+      background: #f8f9fa;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e5e7eb;
+    }
+
+    .gl-booking-form {
+      width: 100%;
+    }
+
+    .gl-form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin-bottom: 25px;
+    }
+
+    .gl-form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gl-form-group-full {
+      grid-column: 1 / -1;
+    }
+
+    .gl-form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      color: #333;
+      letter-spacing: 0.5px;
+    }
+
+    .gl-form-group input,
+    .gl-form-group select,
+    .gl-form-group textarea {
+      padding: 14px 18px;
+      border-radius: 8px;
+      border: 2px solid #d1d5db;
+      font-size: 15px;
+      transition: 0.3s ease;
+    }
+
+    .gl-form-group input:focus,
+    .gl-form-group select:focus,
+    .gl-form-group textarea:focus {
+      outline: none;
+      border-color: #c4161a;
+      box-shadow: 0 0 0 3px rgba(196, 22, 26, 0.15);
+    }
+
+    .gl-form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .gl-form-hint {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    .gl-form-agreement {
+      display: flex;
+      gap: 12px;
+      padding: 20px;
+      margin: 30px 0;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .gl-form-agreement input {
+      accent-color: #c4161a;
+      transform: scale(1.2);
+      margin-top: 4px;
+    }
+
+    .gl-form-actions {
+      text-align: center;
+      padding-top: 25px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .gl-pay-btn {
+      background: linear-gradient(to right, #c4161a, #e63946);
+      color: #fff;
+      border: none;
+      padding: 16px 55px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      box-shadow: 0 8px 25px rgba(196, 22, 26, 0.35);
+    }
+
+    .gl-pay-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(196, 22, 26, 0.45);
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 768px) {
+      .gl-booking-card {
+        padding: 25px;
+      }
+
+      .gl-form-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .gl-booking-title h2 {
+        font-size: 28px;
+      }
+
+      .gl-pay-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gl-booking-section {
+        padding: 40px 15px;
+      }
+
+      .gl-form-agreement {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="gl-booking-section" id="gl-booking">
+  <div class="gl-booking-title">
+    <h2>Book Your Consultation Today</h2>
+    <p class="gl-booking-subtitle">
+      Fill out the form below and our tender experts will connect with you shortly.
+    </p>
+  </div>
+
+  <div class="gl-booking-card">
+    <form id="glBookingForm" class="gl-booking-form">
+
+      <div class="gl-form-grid">
+
+        <div class="gl-form-group">
+          <label>Full Name *</label>
+          <input type="text" required />
+        </div>
+
+        <div class="gl-form-group">
+          <label>Business Name *</label>
+          <input type="text" required />
+        </div>
+
+        <div class="gl-form-group">
+          <label>Business Products / Services *</label>
+          <input type="text" required />
+        </div>
+
+        <div class="gl-form-group">
+          <label>Website</label>
+          <input type="url" placeholder="https://example.com" />
+        </div>
+
+        <div class="gl-form-group">
+          <label>Email *</label>
+          <input type="email" required />
+        </div>
+
+        <div class="gl-form-group">
+          <label>Phone *</label>
+          <input type="tel" maxlength="10" required />
+        </div>
+
+        <div class="gl-form-group">
+          <label>GSTIN *</label>
+          <input type="text" required />
+          <span class="gl-form-hint">Format: 22AAAAA0000A1Z5</span>
+        </div>
+
+        <div class="gl-form-group">
+          <label>Select Plan</label>
+          <select>
+            <option value="">-- Choose Plan --</option>
+            <option>Googlies Basic</option>
+            <option>Googlies Pro</option>
+            <option>Googlies Elite</option>
+            <option>Googlies Prime</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="gl-form-group gl-form-group-full">
+        <label>Registered Address *</label>
+        <textarea required></textarea>
+      </div>
+
+      <div class="gl-form-agreement">
+        <input type="checkbox" required />
+        <span>I confirm that all provided information is accurate.</span>
+      </div>
+
+      <div class="gl-form-actions">
+        <button class="gl-pay-btn" type="submit">
+          <i class="fas fa-lock"></i> Pay Now & Confirm
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  document.getElementById("glBookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Form submitted successfully. Redirecting to payment gateway...");
+  });
+</script>
+
+</body>
+</html>

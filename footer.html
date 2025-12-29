@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+    <title>Document</title>
+</head>
+<style>
+  /* ================= MINIMAL FOOTER STYLES ================= */
+  .minimal-footer {
+    background: #000000;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+
+  /* Logo Section */
+  .footer-logo-section {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    color: #c4161a;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    font-style: italic;
+  }
+
+  /* About Section */
+  .footer-about h4,
+  .footer-contact h4 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer-about h4::after,
+  .footer-contact h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #c4161a;
+  }
+
+  .footer-about p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  /* Contact Section */
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact-item i {
+    color: #c4161a;
+    font-size: 18px;
+    margin-top: 3px;
+    min-width: 20px;
+  }
+
+  .contact-item p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .contact-item strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .contact-item a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .contact-item a:hover {
+    color: #c4161a;
+    text-decoration: underline;
+  }
+
+  /* Copyright */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 992px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    
+    .footer-logo-section {
+      grid-column: 1 / -1;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .minimal-footer {
+      padding: 30px 15px 15px;
+    }
+    
+    .footer-about h4,
+    .footer-contact h4 {
+      font-size: 18px;
+    }
+    
+    .footer-about p,
+    .contact-item p {
+      font-size: 14px;
+    }
+    
+    .tagline {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-item {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .contact-item i {
+      margin-top: 0;
+    }
+    
+    .footer-logo {
+      height: 35px;
+    }
+  }
+</style>
+<body>
+<!-- ================= MINIMAL FOOTER WITH LOGO ================= -->
+ 
+<footer class="minimal-footer">
+  <div class="footer-container">
+    <!-- Logo Section -->
+    <div class="footer-logo-section">
+      <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" class="footer-logo">
+      <p class="tagline">Your Growth, Our Mission.</p>
+    </div>
+
+    <!-- About Section -->
+    <div class="footer-about">
+      <h4>About Googlies</h4>
+      <p>
+        India's premier GeM tender consultancy providing expert support for 
+        government tender bidding, GeM registration, and tender management services. 
+        We help businesses successfully participate in government procurement.
+      </p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <p><strong>Office Address:</strong><br>
+          32A, Ground Floor,<br> JD Block, Pitampura , <br>North West New Delhi-110034
+        </p>
+        </div>
+      </div>
+
+       <div class="contact-item">
+        <i class="fa-brands fa-whatsapp "></i>
+        <div>
+          <p><strong>Connect Now at:</strong><br>
+          <a href="">+91-70-11-68-60-21</a></p>
+        </div>
+      </div>
+      
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <p><strong>Email:</strong><br>
+          <a href="mailto:pradeep.alchapo@gmail.com">pradeep.alchapo@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> 2025 Googlies . All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

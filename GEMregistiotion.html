@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GeM Registration - Government e-Marketplace Registration</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset some basics */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            /* color: #7a0000; */
+            margin: 0;
+            padding: 0px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #C8102E;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #7a0000;
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            max-height: 50px;
+        }
+
+        header h1 {
+            font-weight: 700;
+            font-size: 28px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-weight: 800;
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.85;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #C8102E;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+
+        /* Section intro paragraph */
+        .intro p {
+            font-size: 16px;
+            margin-bottom: 1.5rem;
+            color: #800000;
+        }
+
+        /* Two-column layout for intro */
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .intro img {
+            max-width: 180px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgb(178 34 34 / 0.2);
+        }
+
+        .intro-content {
+            flex: 1 1 400px;
+        }
+
+        /* Lists */
+        ul {
+            padding-left: 20px;
+            margin-bottom: 2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 2px 6px rgb(178 34 34 / 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 14px 16px;
+            border: 1px solid #B22222;
+        }
+
+        th {
+            background-color: #f6d4d4;
+            color: #B22222;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #fff4f4;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffe6e6;
+        }
+
+        /* Step list */
+        ol {
+            margin-left: 20px;
+            margin-bottom: 2rem;
+        }
+
+        ol li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Checklist */
+        .checklist {
+            color: #007a00;
+            font-weight: 700;
+        }
+
+        /* Call to action */
+        .contact-info {
+            background-color: #B22222;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 25px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgb(178 34 34 / 0.35);
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            color: white;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 16px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .contact-info a {
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #a00000;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            main {
+                margin: 30px 15px 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- 
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="imgs/Googlies_Logo_1.png" alt="Logo">
+        </div>
+
+        <p>
+            Get Ready to Change The Way You Bid.
+            <span>Your Growth, Our Mission.</span>
+            Let’s turn opportunities into success —
+            <strong>Book Your Consultation Today!</strong>
+        </p>
+    </nav>
+ -->
+
+
+
+
+
+    <header>
+        <img src="imgs/Googlies_Logo_1.png" alt="GeM Logo" />
+        <div>
+            <h1>GeM Registration</h1>
+            <h2>Government e-Marketplace Registration</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIw-62xLj1XG-yUDqA1BVn1sSGvH1X2VuvA&s"
+                alt="GeM" />
+            <div class="intro-content">
+                <p><a href="https://gem.gov.in" target="_blank" rel="noopener noreferrer" style="font-weight:600;">GeM
+                        Registration – Start Selling to the Government of India</a></p>
+                <p>The Government e-Marketplace (GeM) is an official procurement portal launched by the Government of
+                    India to simplify buying and selling for government departments, PSUs, and ministries.</p>
+                <ul>
+                    <li>Streamlines procurement procedures with complete transparency.</li>
+                    <li>Offers a secure and convenient digital platform for government transactions.</li>
+                    <li>Allows buyers and sellers to connect easily, facilitating faster and reliable trade.</li>
+                    <li>Ensures compliance with government regulations for hassle-free participation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Why Register on GeM Portal? (Key Advantages)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Top Benefits</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Direct Access to Government Buyers</td>
+                        <td>Sell your products and services directly to authorized government departments and PSUs.</td>
+                    </tr>
+                    <tr>
+                        <td>100% Online & Transparent Process</td>
+                        <td>Completely digital registration and tendering with no middlemen.</td>
+                    </tr>
+                    <tr>
+                        <td>Expand Your Market Reach</td>
+                        <td>Reach buyers across India’s government agencies, boosting sales potential.</td>
+                    </tr>
+                    <tr>
+                        <td>Guaranteed Payments & Security</td>
+                        <td>Timely payments backed by government security standards.</td>
+                    </tr>
+                    <tr>
+                        <td>Special Opportunities for MSMEs & Startups</td>
+                        <td>Enjoy reserved categories and incentives designed to promote local enterprises.</td>
+                    </tr>
+                    <tr>
+                        <td>Regular Updates & Notifications</td>
+                        <td>Stay informed with the latest tender announcements and contract information.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Who Can Register on GeM?</h2>
+            <ul>
+                <li>Proprietorship Firms and LLPs</li>
+                <li>Private and Public Limited Companies</li>
+                <li>MSMEs and Startups</li>
+                <li>NGOs, Trusts, and Societies</li>
+                <li>Manufacturers, Distributors, Dealers, and Service Providers</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Documents Required for GeM Registration</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entity Type</th>
+                        <th>Documents Needed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proprietorship</td>
+                        <td>PAN card, Aadhaar card, bank details, address proof</td>
+                    </tr>
+                    <tr>
+                        <td>Partnership / LLP</td>
+                        <td>Partnership deed, PAN card, Aadhaar card, bank details, GST certificate if applicable</td>
+                    </tr>
+                    <tr>
+                        <td>Private / Public Limited</td>
+                        <td>Certificate of incorporation, MCA filings, PAN card, GST certificate, bank details</td>
+                    </tr>
+                    <tr>
+                        <td>MSME / Startup</td>
+                        <td>Udyam registration certificate, MSME or Startup certificate, PAN card, bank details</td>
+                    </tr>
+                    <tr>
+                        <td>NGO / Society</td>
+                        <td>Registration certificate, PAN card, bank details</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Additional documents that may be required depending on your entity:</p>
+            <ul>
+                <li>Trademark certificate (if applicable)</li>
+                <li>Cancelled cheque or bank passbook copy</li>
+                <li>Digital Signature Certificate (DSC)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Step-by-Step Process of GeM Seller Registration</h2>
+            <ol>
+                <li>Create your user profile on the GeM portal.</li>
+                <li>Upload all necessary business and legal documents.</li>
+                <li>Build and complete your product or service catalog.</li>
+                <li>Submit your application and wait for verification.</li>
+                <li>Start bidding on government tenders once approved.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Why Choose Official Googlies for GeM Registration?</h2>
+            <ul>
+                <li>Complete and seamless GeM registration and profile setup</li>
+                <li>Expert assistance for product catalog listings</li>
+                <li>Professional help with document preparation and submission</li>
+                <li>Timely follow-ups and application tracking support</li>
+                <li>Guidance on tender bidding to improve success</li>
+                <li>Support for MSME and Startup registration</li>
+                <li>Regular email updates about new tender opportunities</li>
+                <li>We manage the full process to help you start selling with confidence</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Why Businesses Trust Official Googlies</h2>
+            <ul>
+                <li class="checklist">✔️ Over 1000 successful GeM registrations completed</li>
+                <li class="checklist">✔️ 24/7 expert support and guidance</li>
+                <li class="checklist">✔️ Dedicated tender bidding assistance</li>
+                <li class="checklist">✔️ Fast processing – get registered within one day</li>
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h2 style="color: white;">Grow Your Business with Official Googlies</h2>
+            <ul>
+                <li>Contact us now to start selling on GeM today!</li>
+                <li><a href="tel:+ 7011686021"> Connect Now at <i class="fa-brands fa-whatsapp "style="color:#25D366;"></i> +91-70-11-68-60-21<br></a></li>
+                <li><a href="mailto:pradeep.alchapo@gmail.com">Email:pradeep.alchapo@gmail.com</a></li>
+                <!-- <li><a href="https://officialtechnology.com" target="_blank" rel="noopener noreferrer">Visit:
+                        www.officialtechnolog.com</a></li> -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Blumart Globall LLP All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

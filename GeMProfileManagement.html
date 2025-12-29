@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+    <title>GeM Profile Management</title>
+    <style>
+        /* Basic Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            color: #CF2030;
+            /* Dark blue */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            /* color: #001f4d; */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #b22222;
+        }
+
+        header {
+            /* background: #f0f4fb; */
+            padding: 60px 20px 30px;
+            text-align: center;
+            background-color: #CF2030;
+            /* background-color: #CF2030; */
+            border-bottom: 3px solid #001f4d;
+        }
+
+        header h1 {
+            font-weight: 900;
+            font-size: 2.25rem;
+            /* background-color: #c4161a; */
+            color: #ffffff;
+            margin: 0 0 10px;
+            letter-spacing: 1.2px;
+        }
+
+        header p {
+            font-weight: 600;
+            font-size: 1rem;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .breadcrumb {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .breadcrumb span {
+            margin: 0 5px;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        /* Content area */
+        .content {
+            flex: 1 1 60%;
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        .content a {
+            font-weight: 700;
+            color: #CF2030;
+        }
+
+        .content p {
+            margin-bottom: 1.2rem;
+        }
+
+        .content strong {
+            color: #b22222;
+        }
+
+        /* Contact info fixed below content */
+        .contact-info {
+            margin-top: 3rem;
+            font-weight: 700;
+            color: #b22222;
+            border-left: 4px solid #b22222;
+            padding-left: 12px;
+            font-size: 1rem;
+        }
+
+        /* Right side - images */
+        .side-images {
+            flex: 1 1 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .side-images img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(178, 34, 34, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                margin: 30px auto 40px;
+            }
+
+            .side-images {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>GEM PROFILE MANAGEMENT</h1>
+        <!-- <p class="breadcrumb">Home <span>/</span> GeM Profile Management</p> -->
+    </header>
+
+    <main>
+        <article class="content">
+            <p><a href="#">GeM Profile Management</a></p>
+
+            <p><strong>Benefit :</strong> An optimized GeM profile boosts your visibility and makes it easier for
+                government buyers to find you. A well-maintained profile increases your chances of being selected for
+                government tenders.</p>
+
+            <p><strong>Registration Details :</strong> Managing your profile involves uploading accurate and current
+                certifications, along with all relevant details on GeM. Regular updates are key to remaining competitive
+                and visible.</p>
+
+            <p><strong>Validity :</strong> Your profile remains valid as long as your GeM registration is active. It is
+                crucial to keep your profile updated with new certifications or products to ensure continued visibility.
+            </p>
+
+            <div class="contact-info">
+                <p>Connect Now at <i class="fa-brands fa-whatsapp "style="color:#25D366;"></i> +91-70-11-68-60-21</p>
+                <p>Email: <a href="mailto:pradeep.alchapo@gmail.com">pradeep.alchapo@gmail.com</a></p>
+            </div>
+        </article>
+
+        <aside class="side-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8DdzufWyI9ECE1m6NwVaSK4dS4L-vBOUMrA&s"
+                alt="GeM Government e Marketplace Logo" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9nwjQTIJYue6rAdNv9pEpwV4I9ajN8oCRw&s"
+                alt="Profile Management Illustration" />
+        </aside>
+    </main>
+
+</body>
+
+</html>

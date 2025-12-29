@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeM Product & Service Listing | Googlies</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* ========== RESET & BASE STYLES ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #cf2030;
+            --primary-dark: #111;
+            --primary-light: #fff;
+            --gray-light: #f8f9fa;
+            --gray-medium: #666;
+            --gray-dark: #333;
+            --success-green: #2ecc71;
+            --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--gray-dark);
+            background-color: var(--primary-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========== HEADER & NAVIGATION ========== */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-dark), #222);
+            padding: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .logo-text {
+            color: var(--primary-light);
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo-text span {
+            color: var(--primary-red);
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .main-nav a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary-red);
+        }
+
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-red);
+            transition: var(--transition);
+        }
+
+        .main-nav a:hover::after {
+            width: 100%;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--primary-light);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary-red);
+            color: var(--primary-light);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-red);
+            color: var(--primary-light);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: #b01c2a;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(207, 32, 48, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-light);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            border: 2px solid var(--primary-light);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* ========== MAIN CONTENT SECTIONS ========== */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-red);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--gray-medium);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+
+        /* ========== IMPORTANCE SECTION ========== */
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .importance-card {
+            background: var(--primary-light);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+            text-align: center;
+            border-top: 4px solid var(--primary-red);
+        }
+
+        .importance-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .importance-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(207, 32, 48, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+            color: var(--primary-red);
+        }
+
+        .importance-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+
+        .importance-card p {
+            color: var(--gray-medium);
+        }
+
+        /* ========== DOCUMENTS SECTION ========== */
+        .documents-section {
+            background: var(--gray-light);
+        }
+
+        .documents-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .documents-column {
+            background: var(--primary-light);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .documents-column h3 {
+            font-size: 24px;
+            color: var(--primary-red);
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(207, 32, 48, 0.2);
+        }
+
+        .documents-list {
+            list-style: none;
+        }
+
+        .documents-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .documents-list li:last-child {
+            border-bottom: none;
+        }
+
+        .documents-list li i {
+            color: var(--success-green);
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        /* ========== PROCESS SECTION ========== */
+        .process-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            background: rgba(207, 32, 48, 0.2);
+        }
+
+        .process-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .process-step:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .process-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-light);
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+            z-index: 2;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(207, 32, 48, 0.3);
+        }
+
+        .step-content {
+            flex: 1;
+            background: var(--primary-light);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            margin: 0 30px;
+            transition: var(--transition);
+        }
+
+        .step-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .step-content h3 {
+            font-size: 20px;
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+
+        /* ========== WHY CHOOSE US ========== */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .why-card {
+            background: var(--primary-light);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .why-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .why-card i {
+            font-size: 40px;
+            color: var(--primary-red);
+            margin-bottom: 20px;
+        }
+
+        .why-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+
+        /* ========== FAQ SECTION ========== */
+        .faq-section {
+            background: var(--gray-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--primary-light);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: rgba(207, 32, 48, 0.05);
+        }
+
+        .faq-question.active {
+            color: var(--primary-red);
+        }
+
+        .faq-icon {
+            font-size: 20px;
+            transition: var(--transition);
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-answer.show {
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        /* ========== CTA SECTION ========== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-dark), #222);
+            color: var(--primary-light);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--primary-dark);
+            color: var(--primary-light);
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: var(--primary-light);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-red);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-red);
+            padding-left: 5px;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: var(--primary-red);
+            margin-top: 5px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 38px;
+            }
+            
+            .process-timeline::before {
+                left: 30px;
+            }
+            
+            .process-step {
+                flex-direction: row !important;
+            }
+            
+            .step-content {
+                margin-left: 80px;
+                margin-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .main-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 28px;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+            
+            .documents-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="page-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo">
+                <div class="logo-text">Googlies <span>Consultants</span></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#plans">Plans</a></li>
+                    <li><a href="index.html#why">Why Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <span class="hero-badge">GeM Expert Service</span>
+            <h1 class="hero-title">GeM Product & Service Listing</h1>
+            <p class="hero-subtitle">
+                Get all your products listed & approved on GeM portal to start receiving direct government orders. 
+                Fast, easy & hassle-free listing with 100% approval guarantee.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    Get Listed Now
+                </a>
+                <a href="#process" class="btn-secondary">
+                    <i class="fas fa-play-circle"></i>
+                    View Process
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMPORTANCE SECTION ========== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why GeM Listing Is Crucial</h2>
+                <p>Without proper listing, your business won't appear in government buyer searches — and you'll miss out on direct purchase orders</p>
+            </div>
+            <div class="importance-grid">
+                <div class="importance-card">
+                    <div class="importance-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Higher Visibility</h3>
+                    <p>Appear in more buyer searches with optimized listings in correct categories</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Faster Approvals</h3>
+                    <p>Our expert handling ensures quick approval within 1-3 working days</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>More Tender Eligibility</h3>
+                    <p>Properly listed products qualify for more GeM tenders and bids</p>
+                </div>
+                <div class="importance-card">
+                    <div class="importance-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Direct Orders</h3>
+                    <p>Increase chances of receiving L1 (lowest price) direct purchase orders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOCUMENTS SECTION ========== -->
+    <section class="section documents-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Required Documents & Details</h2>
+                <p>Here's what we need from you to create perfect GeM listings</p>
+            </div>
+            <div class="documents-container">
+                <div class="documents-column">
+                    <h3>For Product Listing</h3>
+                    <ul class="documents-list">
+                        <li><i class="fas fa-check"></i> Product Name, Category & Sub-category</li>
+                        <li><i class="fas fa-check"></i> Technical Specifications & Description</li>
+                        <li><i class="fas fa-check"></i> Brand / OEM Details (if applicable)</li>
+                        <li><i class="fas fa-check"></i> High-Resolution Product Images</li>
+                        <li><i class="fas fa-check"></i> Pricing & Packaging Information</li>
+                        <li><i class="fas fa-check"></i> Warranty / Guarantee Details</li>
+                    </ul>
+                </div>
+                <div class="documents-column">
+                    <h3>For Service Listing</h3>
+                    <ul class="documents-list">
+                        <li><i class="fas fa-check"></i> Service Name & Category</li>
+                        <li><i class="fas fa-check"></i> Detailed Scope of Work / Description</li>
+                        <li><i class="fas fa-check"></i> Unit of Measurement (per job, hour, etc.)</li>
+                        <li><i class="fas fa-check"></i> Rate Card / Pricing Structure</li>
+                        <li><i class="fas fa-check"></i> Service Availability Area</li>
+                        <li><i class="fas fa-check"></i> Delivery or Response Timeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS SECTION ========== -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Listing Process</h2>
+                <p>Simple 5-step process to get your products/services listed and approved</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Category Identification</h3>
+                        <p>We analyze your products/services and select the perfect GeM category and sub-category for maximum visibility</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Content Creation</h3>
+                        <p>Our experts create compelling, compliant descriptions and technical specifications that meet GeM standards</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Catalog Preparation</h3>
+                        <p>We optimize images, register brands if needed, and structure all pricing details as per GeM requirements</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Upload & Follow-up</h3>
+                        <p>We handle the complete upload process and manage approval follow-ups with GeM authorities</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Ongoing Support</h3>
+                        <p>Continuous support for modifications, new listings, or updates as your business grows</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="section documents-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Googlies</h2>
+                <p>We're different from ordinary GeM consultants</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>10,000+ Successful Listings</h3>
+                    <p>We've successfully listed thousands of products across diverse categories</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>100% Approval Guarantee</h3>
+                    <p>Our process ensures compliance for approvals as per GeM norms</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fast Turnaround</h3>
+                    <p>Get your listings live within 2-3 working days with our efficient process</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Dedicated Support</h3>
+                    <p>Personal account manager to guide you at every step of the process</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Holistic Service</h3>
+                    <p>Integrates with our GeM registration, profile management & tender support</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive pricing with complete transparency and no hidden charges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about GeM product and service listing</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does the GeM product approval take?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Usually 1-3 working days after proper listing submission. Our team ensures compliance to avoid delays.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I list multiple products or services together?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We help you list all your products & services on GeM in one go — with full approval support.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What if my product category isn't available on GeM?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We'll help you request a new category through the official GeM category creation process.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I list unbranded or custom products?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes. Many categories allow unbranded or custom product listings with proper documentation.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is this service included in your subscription plans?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, our Googlies Pro, Elite, and Prime plans include product/service listings. We also offer standalone services.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to List Your Products on GeM?</h2>
+            <p class="cta-subtitle">
+                Start receiving direct government orders by getting your catalog professionally listed. 
+                Contact us today for a free consultation and pricing.
+            </p>
+            <a href="#contact" class="btn-primary">
+                <i class="fas fa-phone-alt"></i>
+                Contact Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Googlies Consultants</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 20px;">
+                        India's premier GeM tender consultancy service provider helping businesses 
+                        win government contracts since 2010.
+                    </p>
+                    <div class="logo">
+                        <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" style="height: 40px;">
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#plans">Pricing Plans</a></li>
+                        <li><a href="index.html#why">Why Choose Us</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="GEMregistration.html">GeM Registration</a></li>
+                        <li><a href="GeMProfileManagement.html">GeM Profile Management</a></li>
+                        <li><a href="#">Product/Service Listing</a></li>
+                        <li><a href="#">Tender Bidding</a></li>
+                        <li><a href="#">Vendor Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Street, Mumbai, Maharashtra 400001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@Googliesconsultants.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Googlies Consultants. All Rights Reserved. | GeM Tender Services Specialists
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    // Toggle active class on question
+                    this.classList.toggle('active');
+                    
+                    // Get the answer element
+                    const answer = this.nextElementSibling;
+                    
+                    // Toggle show class on answer
+                    if (answer.classList.contains('show')) {
+                        answer.classList.remove('show');
+                    } else {
+                        // Close other open answers
+                        document.querySelectorAll('.faq-answer.show').forEach(openAnswer => {
+                            openAnswer.classList.remove('show');
+                            openAnswer.previousElementSibling.classList.remove('active');
+                        });
+                        
+                        answer.classList.add('show');
+                    }
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Animate process steps on scroll
+            const observerOptions = {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe process steps for animation
+            document.querySelectorAll('.process-step').forEach(step => {
+                step.style.opacity = '0';
+                step.style.transform = 'translateY(30px)';
+                step.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(step);
+            });
+            
+            // Add hover effect to importance cards
+            document.querySelectorAll('.importance-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+            });
+            
+            // Add loading animation to hero section
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                heroTitle.style.opacity = '0';
+                heroTitle.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    heroTitle.style.transition = 'opacity 1s ease, transform 1s ease';
+                    heroTitle.style.opacity = '1';
+                    heroTitle.style.transform = 'translateY(0)';
+                }, 300);
+            }
+        });
+    </script>
+</body>
+</html>
