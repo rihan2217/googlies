@@ -195,7 +195,7 @@
 
       /* ================= REDESIGNED HERO SECTION ================= */
       .hero-section.redesigned {
-        background: linear-gradient(135deg, #0a1f3a 0%, #1a3a5f 100%);
+        background: #cf2030;
         min-height: 90vh;
         padding: 40px 20px;
         position: relative;
@@ -217,7 +217,7 @@
       /* Image Column */
       .hero-image-column {
         position: relative;
-        width: 500px;
+        width: 450px;
         height: 500px;
         border-radius: 20px;
         overflow: hidden;
@@ -264,8 +264,8 @@
       }
 
       .hero-text-column .hero-tagline {
-        background: rgba(196, 22, 26, 0.9);
-        color: white;
+        background: white;
+        color: #cf2030;
         padding: 12px 30px;
         border-radius: 50px;
         font-size: 1.1rem;
@@ -306,14 +306,15 @@
       .hero-text-column .text-slide-quote {
         font-size: 1.2rem;
         line-height: 1.7;
-        color: rgba(255, 255, 255, 0.9);
+        background-color: black;
+        color: white;
         padding-left: 20px;
-        border-left: 4px solid #c4161a;
+        border-left: 4px solid white;
       }
 
       .hero-text-column .cta-button {
-        background: #c4161a;
-        color: white;
+        background: white;
+        color: #cf2030;
         border: none;
         padding: 18px 45px;
         border-radius: 50px;
@@ -328,7 +329,7 @@
       }
 
       .hero-text-column .cta-button:hover {
-        background: #b01c2a;
+        background: #cecece;
         transform: translateY(-3px);
         box-shadow: 0 15px 30px rgba(196, 22, 26, 0.5);
       }
@@ -349,13 +350,13 @@
         width: 14px;
         height: 14px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(59, 59, 59, 0.3);
         cursor: pointer;
         transition: all 0.3s ease;
       }
 
       .slider-controls.combined .dot.active {
-        background: #c4161a;
+        background: black;
         transform: scale(1.2);
       }
 
@@ -367,7 +368,7 @@
         }
 
         .hero-image-column {
-          width: 400px;
+          width: 345px;
           height: 400px;
           order: 2;
         }
@@ -391,7 +392,7 @@
       @media (max-width: 768px) {
         .hero-image-column {
           height: 300px;
-          width: 300px;
+          width: 240px;
         }
 
         .hero-text-column .text-slide-headline {
@@ -411,11 +412,11 @@
       @media (max-width: 480px) {
         .hero-image-column {
           height: 250px;
-          width: 250px;
+          width: 215px;
         }
 
         .hero-text-column .hero-text-slider {
-          min-height: 440px;
+          min-height: 380px;
         }
 
         .hero-text-column .text-slide-headline {
@@ -448,7 +449,7 @@
     }
 
     .navbar p {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.5;
 
         max-width: calc(100% - 60px);
@@ -468,7 +469,7 @@
     }
 
     .navbar p {
-        font-size: 11px;
+        font-size: 8px;
     }
 }
 
@@ -522,6 +523,12 @@
           height: 40px !important;
           margin-top: 10px !important;
         }
+
+        .gtc-services-title .sir-logo img{
+          height:135px !important; 
+          margin-bottom: 20px;
+          
+        }
       }
 
       @media (max-width: 768px) {
@@ -544,6 +551,9 @@
         .gtc-services-title img {
           width: 140px !important;
           height: 35px !important;
+        }
+        .gtc-services-title .sir-logo img{
+          height:135px !important;
         }
       }
 
@@ -626,6 +636,10 @@
         Let's turn opportunities into success.<br />
         <a href="#gl-booking"><strong>Book Your Consultation Today...!!!</strong></a> 
       </p>
+
+      <div class="sir-logo">
+        <img src="imgs/sir3.jpeg" alt="Logo" />
+      </div>
     </nav>
 
     <!-- ================= REDESIGNED HERO SECTION WITH TWO COLUMNS ================= -->
@@ -798,9 +812,17 @@
     <section class="gtc-services">
       <div class="gtc-container">
         <div class="gtc-services-title">
-          <h3> We guide you to place a successful tender bid</h3>
+          <div>
+            <img src="imgs/Googlies_Logo_1.png" alt="" />
+          </div>
+          <div>
           <h2>Our Services</h2>
-          <img src="imgs/Googlies_Logo_1.png" alt="" />
+          <h3> We guide you to place a successful tender bid</h3>
+          </div>
+          <div class="sir-logo">
+            <img src="imgs/sir3.jpeg" alt="" />
+          </div>
+          
         </div>
 
         <div class="owl-carousel gtc-service-slider">
@@ -986,22 +1008,57 @@
             />
           </div>
         </div>
+        <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Maximize Your Tender Success with Expert Support</h3>
+            <p class="bni-card-text">
+              Googlies offers specialized GeM tender consultation & bidding
+              services to help you win more government contracts and grow your
+              business..
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir1.jpeg"
+              alt="Tender"
+            />
+          </div>
+        </div>
         <!-- CARD 2 -->
         <div class="bni-card">
           <div class="bni-card-content">
             <h3 class="bni-card-title">GeM Registration Assistance</h3>
             <p class="bni-card-text">
-              Complete support for Government e-Marketplace registration,
-              covering seller profile creation, document verification, bank and
-              tax validation, mapping product categories, compliance checks, and
-              seamless onboarding to enable smooth participation in government
-              procurement processes.
+              Maximize your bids with expert GeM tender consultation and
+                specialized services for efficient government tender
+                participation..
             </p>
           </div>
           <div class="bni-card-image">
             <img
               src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
               alt="GeM"
+            />
+          </div>
+        </div>
+
+                <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">No.1 GeM Portal Service Provider for Tender Support</h3>
+            <p class="bni-card-text">
+              Googlies offers specialized GeM tender consultation & bidding
+              services to help you win more government contracts and grow your
+              business..
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir2.jpeg"
+              alt="Tender"
             />
           </div>
         </div>
@@ -1023,6 +1080,23 @@
             />
           </div>
         </div>
+           <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Tender Analytics & Competition Insights</h3>
+            <p class="bni-card-text">
+              Make data-driven bidding decisions with our advanced analytics
+              and competitor tracking tools.
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir3.jpeg"
+              alt="Tender"
+            />
+          </div>
+        </div>
         <!-- CARD 4 -->
         <div class="bni-card">
           <div class="bni-card-content">
@@ -1038,6 +1112,23 @@
             <img
               src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"
               alt="Assessment"
+            />
+          </div>
+        </div>
+                   <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Comprehensive Tender Alert & Tracking System</h3>
+            <p class="bni-card-text">
+              Never miss a relevant opportunity with our smart tender alerts
+                and real-time tracking dashboard.
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir2.jpeg"
+              alt="Tender"
             />
           </div>
         </div>
@@ -1059,6 +1150,24 @@
             />
           </div>
         </div>
+
+                  <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Expert Bid Management & Submission Services</h3>
+            <p class="bni-card-text">
+                From tender search to final submission, our experts manage the
+                entire bidding process to increase your win rate.
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir1.jpeg"
+              alt="Tender"
+            />
+          </div>
+        </div>
         <!-- CARD 6 -->
         <div class="bni-card">
           <div class="bni-card-content">
@@ -1077,6 +1186,24 @@
             />
           </div>
         </div>
+
+                          <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Flexible Tender Support Plans</h3>
+            <p class="bni-card-text">
+                Choose from tailored tender support packages designed for
+                businesses of all sizes.      
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir3.jpeg"
+              alt="Tender"
+            />
+          </div>
+        </div>
         <!-- CARD 7 -->
         <div class="bni-card">
           <div class="bni-card-content">
@@ -1092,6 +1219,24 @@
             <img
               src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
               alt="Certification"
+            />
+          </div>
+        </div>
+
+                                  <!-- card new 1 -->
+         <div class="bni-card">
+          <div class="bni-card-content">
+            <h3 class="bni-card-title">Flexible Tender Support Plans</h3>
+            <p class="bni-card-text">
+                Choose from tailored tender support packages designed for
+                businesses of all sizes.      
+            </p>
+            <a href="#gl-booking"><button class="cta-button">Book Your Consultation Today...!!!</button></a>
+          </div>
+          <div class="bni-card-image">
+            <img
+              src="imgs/sir2.jpeg"
+              alt="Tender"
             />
           </div>
         </div>
@@ -1621,56 +1766,56 @@
           <div class="gl-form-grid">
             <div class="gl-form-group">
               <label>Full Name *</label>
-              <input type="text" required />
+              <input type="text"  name="full_name" required />
             </div>
 
             <div class="gl-form-group">
               <label>Business Name *</label>
-              <input type="text" required />
+              <input type="text" name="business_name" required />
             </div>
 
             <div class="gl-form-group">
               <label>Business Products / Services *</label>
-              <input type="text" required />
+             <input type="text" name="products_services" required />
             </div>
 
             <div class="gl-form-group">
               <label>Website</label>
-              <input type="url" placeholder="https://example.com" />
+              <input type="url" name="website" placeholder="https://example.com" />
             </div>
 
             <div class="gl-form-group">
               <label>Email *</label>
-              <input type="email" required />
+              <input type="email" name="email" required />
             </div>
 
             <div class="gl-form-group">
               <label>Phone *</label>
-              <input type="tel" maxlength="10" required />
+              <input type="tel" name="phone" maxlength="10" required />
             </div>
 
             <div class="gl-form-group">
               <label>GSTIN *</label>
-              <input type="text" required />
+              <input type="text" name="gstin" required />
               <span class="gl-form-hint">Format: 22AAAAA0000A1Z5</span>
             </div>
 
             <div class="gl-form-group">
               <label>Select Plan</label>
-              <select>
+              <select id="plan" name="plan"  required>
                 <option value="">-- Choose Plan --</option>
-                <option>Googlies Consultation</option>
-                <option>Googlies Basic</option>
-                <option>Googlies Pro</option>
-                <option>Googlies Elite</option>
-                <option>Googlies Prime</option>
+                <option value="consultation">Googlies Consultation</option>
+                <option  value="basic">Googlies Basic</option>
+                <option value="pro">Googlies Pro</option>
+                <option value="elite">Googlies Elite</option>
+                <option value="prime">Googlies Prime</option>
               </select>
             </div>
           </div>
 
           <div class="gl-form-group gl-form-group-full">
             <label>Registered Address *</label>
-            <textarea required></textarea>
+            <textarea name="address" required></textarea>
           </div>
 
           <div class="gl-form-agreement">
@@ -1769,10 +1914,8 @@
     <div class="footer-logo-section">
       <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" class="footer-logo">
       <p class="tagline">Your Growth, Our Mission.</p>
-    </div>
 
-    <!-- About Section -->
-    <div class="footer-about">
+          <div class="footer-about">
       <h4>About Googlies</h4>
       <p>
         India's premier GeM tender consultancy providing expert support for 
@@ -1780,6 +1923,10 @@
         We help businesses successfully participate in government procurement.
       </p>
     </div>
+    </div>
+
+    <!-- About Section -->
+
 
     <!-- Contact Section -->
     <div class="footer-contact">
@@ -2075,43 +2222,131 @@
         }
       });
     </script>
-    <script>
-      document
-        .getElementById("glBookingForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+    <!-- <script>
+      // document
+      //   .getElementById("glBookingForm")
+      //   .addEventListener("submit", function (e) {
+      //     e.preventDefault();
 
-          const form = this;
-          const toast = document.getElementById("glToast");
+      //     const form = this;
+      //     const toast = document.getElementById("glToast");
 
-          fetch("submit-booking.php", {
-            method: "POST",
-            body: new FormData(form),
-          })
-            .then((res) => res.json())
-            .then((data) => {
-              toast.textContent = data.message;
-              toast.classList.remove("error");
-              toast.classList.add("show");
+      //     fetch("submit-booking.php", {
+      //       method: "POST",
+      //       body: new FormData(form),
+      //     })
+           
+      //   });
+    </script> -->
 
-              if (data.status === "error") {
-                toast.classList.add("error");
-              } else {
-                form.reset(); // reset only on success
-              }
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
-              // auto-hide toast
-              setTimeout(() => {
-                toast.classList.remove("show");
-              }, 4000);
-            })
-            .catch(() => {
-              toast.textContent = "Something went wrong. Please try again.";
-              toast.classList.add("show", "error");
-              setTimeout(() => toast.classList.remove("show"), 4000);
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("glBookingForm");
+    
+    if (!form) return;
+    
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
+        
+        // Validate form
+        if (!form.checkValidity()) {
+            alert("Please fill all required fields correctly");
+            return;
+        }
+        
+        const plan = document.getElementById("plan").value;
+        if (!plan) {
+            alert("Please select a plan");
+            return;
+        }
+        
+        // Create order
+        try {
+            const response = await fetch("create-order.php", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({ plan })
             });
+            
+            const raw = await response.text();
+            console.log("CREATE ORDER RAW RESPONSE:", raw);
+
+            let data;
+            try {
+                data = JSON.parse(raw);
+            } catch (e) {
+                throw new Error("Invalid response from server");
+            }
+
+            
+            if (data.status !== "success") {
+                throw new Error(data.message || "Failed to create order");
+            }
+            
+            // Prepare Razorpay options
+            const options = {
+                key: "<?php echo RAZORPAY_KEY_ID; ?>", // Or put directly from config
+                amount: data.amount,
+                currency: data.currency,
+                order_id: data.order_id,
+                name: "Googlies Tender Services",
+                description: `Plan: ${plan}`,
+                handler: async function (response) {
+                    // Collect form data
+                    const formData = new FormData(form);
+
+                    formData.append("plan", plan);
+
+                    formData.append("razorpay_payment_id", response.razorpay_payment_id);
+                    formData.append("razorpay_order_id", response.razorpay_order_id);
+                    formData.append("razorpay_signature", response.razorpay_signature);
+                    
+                    // Verify payment
+                    const verifyResponse = await fetch("verify-payment.php", {
+                        method: "POST",
+                        body: formData
+                    });
+                    
+                    const verifyData = await verifyResponse.json();
+                    
+                    if (verifyData.status === "success") {
+                        alert("✅ Payment Successful! Your booking is confirmed.");
+                        form.reset();
+                        // Redirect or show success message
+                        window.location.href = "success.html";
+                    } else {
+                        alert("❌ Payment verification failed: " + verifyData.message);
+                    }
+                  },
+                  prefill: {
+                      name: form.full_name.value,
+                      email: form.email.value,
+                      contact: form.phone.value
+                  },
+                  theme: {
+                      color: "#c4161a"
+                  },
+                  modal: {
+                      ondismiss: function() {
+                          console.log("Payment modal closed");
+                      }
+                  }
+              };
+            
+                const rzp = new Razorpay(options);
+                rzp.open();
+                
+            } catch (error) {
+                console.error("Payment error:", error);
+                alert("Error: " + error.message);
+            }
         });
-    </script>
+    });
+</script>
+
   </body>
 </html>
-
