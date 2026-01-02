@@ -2,7 +2,7 @@
            margin: 0;
            padding: 0;
            box-sizing: border-box;
-           font-family: "Segoe UI", Arial, sans-serif;
+           font-family: Arial, sans-serif;
        }
 
        :root {
@@ -23,7 +23,7 @@
            width: 100%;
            height: 104px;
            display: flex;
-           justify-content: space-around;
+           justify-content: space-between;
            align-items: center;
            gap: 24px;
            padding: 0 40px;
@@ -1061,7 +1061,7 @@
            margin: 0;
            padding: 0;
            box-sizing: border-box;
-           font-family: "Segoe UI", Arial, sans-serif;
+           font-family: Arial, sans-serif;
        }
 
        .gtc-wrap {
@@ -1159,10 +1159,11 @@
        }
 
        .gtc-service-card img {
-           width: 80px;
+           width: 60px;   /* ↓ smaller */
+           height: 140px;  /* ↓ smaller */
+           object-fit: contain;
            background-color: white;
            margin-bottom: 15px;
-           object-fit: contain;
            border-radius: 18px;   
          }
 
@@ -1244,6 +1245,27 @@
         transform: translateX(0);
     }
 }
+
+.gtc-service-card h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: #c4161c;
+    padding: 6px 14px;
+    border-radius: 999px;
+    text-transform: uppercase;
+
+    /* 🔑 THE FIX */
+    height: 58px;                 /* fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 0 0 15px;
+}
+
+
 
        /* ================= HERO ================= */
 /* 
@@ -1719,15 +1741,15 @@
     display: flex;
     gap: 32px;
     width: max-content;
-    animation: bni-scroll-left 70s linear infinite;
+    animation: bni-scroll-right 70s linear infinite;
 }
 
-@keyframes bni-scroll-left {
+@keyframes bni-scroll-right {
     0% {
-        transform: translateX(0);
+        transform: translateX(-70%);
     }
     100% {
-        transform: translateX(-70%);
+        transform: translateX(0);
     }
 } 
 
