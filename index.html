@@ -621,7 +621,161 @@
     }
 }
 
+
     </style>
+
+          <style>
+        /* 保持与其他服务卡片相同的样式 */
+        .tenders-only-card {
+          background: black;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          border-radius: 30px 30px 30px 0;
+          padding: 30px 25px;
+          text-align: center;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, .12);
+          margin: 10px;
+          width: 380px !important;
+          min-width: 380px;
+        }
+        
+        /* 与其他服务卡片相同的标题样式 */
+        .tenders-only-card h4 {
+          font-size: 14px;
+          font-weight: 700;
+          color: #fff;
+          background: #c4161c;
+          padding: 6px 14px;
+          border-radius: 999px;
+          text-transform: uppercase;
+          height: 58px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin: 0 0 20px;
+        }
+        
+        /* 与其他服务卡片相同的图标样式 */
+        .tenders-only-card img {
+          height: 140px;
+          object-fit: contain;
+          background-color: white;
+          margin-bottom: 20px;
+          border-radius: 18px;
+        }
+        
+        /* 与其他服务卡片相同的段落样式 */
+        .tenders-only-card p {
+          font-size: 14px;
+          line-height: 22px;
+          flex-grow: 1;
+          color: #fff;
+          /* margin-bottom: 10px; */
+          /* text-align: left; */
+        }
+        
+        /* 价格区域特殊样式 */
+        .price-box {
+          background: rgba(196, 22, 26, 0.1);
+          border-radius: 8px;
+          /* padding: 12px; */
+          margin: 6px 0;
+        }
+        
+        .price-amount {
+          font-size: 18px;
+          font-weight: bold;
+          color: #c4161c;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+        
+        /* 内容部分样式 */
+        .content-section {
+          text-align: left;
+          margin: 10px 0;
+          flex-grow: 1;
+        }
+        
+        .feature-label {
+          font-weight: bold;
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
+        
+        .inclusions-label {
+          color: #4CAF50;
+        }
+        
+        .exclusions-label {
+          color: #FF5252;
+        }
+        
+        .pros-label {
+          color: #FFC107;
+        }
+        
+        .limitations-label {
+          color: #FF9800;
+        }
+        
+        .feature-text {
+          font-size: 13px;
+          color: #ddd;
+          margin-bottom: 12px;
+          line-height: 1.5;
+          padding-left: 10px;
+        }
+        
+        /* 轮播调整 */
+        .tenders-only-slider .owl-stage {
+          display: flex;
+          padding: 20px 0;
+        }
+        
+        .tenders-only-slider .owl-item {
+          display: flex;
+          height: auto;
+          min-width: 400px;
+        }
+        
+        .note-text {
+          font-size: 12px;
+          font-style: italic;
+          margin: 15px 0 10px;
+          color: #aaa;
+          text-align: center;
+        }
+        
+        /* 按钮样式 */
+        .gtc-read-btn {
+          display: inline-block;
+          margin-top: 15px;
+          background: #c4161c;
+          color: #fff;
+          padding: 7px 24px;
+          border-radius: 30px;
+          font-size: 14px;
+          text-decoration: none;
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+        
+        .gtc-read-btn:hover {
+          background: #9a1215;
+          transform: translateY(-2px);
+        }
+
+        .sir{
+          display: flex;
+          gap: 5px;
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
   </head>
 
   <body>
@@ -637,8 +791,14 @@
         <a href="#gl-booking"><strong>Book Your Consultation Today...!!!</strong></a> 
       </p>
 
+      <div class="sir">
+        <p>Business Consultation<br>
+          Business Development Strategist<br>
+          Government Tender Expert<br>
+          Startups Expertise & Consultant</p>
       <div class="sir-logo">
         <img src="imgs/sir3.jpeg" alt="Logo" />
+      </div>
       </div>
     </nav>
 
@@ -1004,50 +1164,55 @@
     <div class="owl-carousel gtc-service-slider moving-left">
       <!-- GeM - Using building/government icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/609/609034.png" alt="GeM Icon" />
         <h4>GeM Portal Vendor Registration</h4>
-        <p>End-to-end assistance in creating and verifying seller profiles on Government e-Marketplace. Establish your presence on India’s largest government marketplace.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609034.png" alt="GeM Icon" />
+        <p>End-to-end assistance in creating and verifying seller profiles on the Government e-Marketplace. Establish your presence on India’s largest government marketplace. We handle the entire GeM registration process, including profile creation, Aadhaar and PAN verification, and bank account integration. We ensure your seller account is set up with the correct business categories to maximize your visibility to government buyers.</p>
+        <a href="services/gem-vendor-registration.html" class="gtc-read-btn">Unlock Prices Instantly </a>
       </div>
 
       <!-- CPPP - Using tender/contract icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135677.png" alt="CPPP Icon" />
         <h4>CPPP(Central Public Procurement Portal) Enrollment</h4>
-        <p>Complete registration on the primary portal for all central government ministry tenders. The CPPP is the gateway to all Central Ministry tenders.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135677.png" alt="CPPP Icon" />
+        
+        <p>Complete registration on the primary portal for all central government ministry tenders.The CPPP is the gateway to all Central Ministry tenders. We manage your end-to-end enrollment, ensuring your organization is correctly mapped to the relevant procurement modules. Our team ensures your credentials are authenticated so you can download and participate in high-value central tenders without technical hitches.</p>
+        <a href="services/CPPP.html" class="gtc-read-btn">See Today’s Deals Now </a>
       </div>
 
       <!-- State Tenders - Using map/state icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="State Tenders Icon" />
         <h4>State-Specific e-Procurement</h4>
-        <p>Handling registrations for state-level portals like Haryana, UP, Delhi Govt tenders. Every state has its unique bidding ecosystem.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="State Tenders Icon" />
+        
+        <p>Handling registrations for state-level portals (e.g., Haryana tenders, UP Tenders, Delhi Govt Tenders).Every state has its unique bidding ecosystem. Whether it is Haryana tenders, UP Tenders, or Delhi Govt e-Procurement, we provide specialized registration services for all state-level portals. We help you navigate the varying documentation requirements of different state departments.</p>
+        <a href="services/state-eprocurement-registration.html" class="gtc-read-btn">Reveal Your Price </a>
       </div>
 
       <!-- DSC - Using digital signature/security icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2985/2985915.png" alt="DSC Icon" />
         <h4>DSC(Digital Signature Certificate)  Assistance</h4>
-        <p>Guidance on obtaining and mapping correct Class 3 Digital Signature Certificates. A valid Class 3 DSC is mandatory for secure bidding.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/2985/2985915.png" alt="DSC Icon" />
+        
+        <p>Guidance on obtaining and mapping the correct Class 3 DSC required for secure online bidding. A valid Class 3 DSC is mandatory for secure bidding. We assist you in procuring, renewing, and mapping the correct Digital Signature Certificates to your bidding profiles. We also provide technical support to ensure your browser and system settings are compatible with the DSC drivers of various portals.</p>
+        <a href="#" class="gtc-read-btn">Tap to Discover Savings </a>
       </div>
 
       <!-- MSME - Using factory/business icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3067/3067256.png" alt="MSME Icon" />
         <h4>Udyam (MSME) Registration</h4>
-        <p>Helping businesses register as MSMEs to unlock tender fee exemptions and EMD waivers. Unlock exclusive benefits like EMD waivers and tender fee exemptions.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3067/3067256.png" alt="MSME Icon" />
+        
+        <p>Helping businesses register as MSMEs to unlock tender fee exemptions and earnest money deposit (EMD) waivers.Unlock exclusive benefits like EMD waivers and tender fee exemptions. We facilitate your Udyam Registration, ensuring your business is correctly classified. This registration is a powerful tool to help MSMEs compete with larger corporations on a level playing field in the government sector.</p>
+        <a href="#" class="gtc-read-btn">Get Prices in Seconds </a>
       </div>
 
       <!-- Startup - Using startup/rocket icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006625.png" alt="Startup Icon" />
         <h4>Startup India Recognition</h4>
-        <p>Assisting startups in getting DPIIT recognition for relaxed norms in government procurement. New businesses can bypass "Prior Turnover" and "Prior Experience" criteria.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006625.png" alt="Startup Icon" />
+        
+        <p>Assisting startups in getting DPIIT recognition to qualify for "Relaxed Norms" in government procurement. New businesses can bypass "Prior Turnover" and "Prior Experience" criteria through Startup India Recognition. We manage the DPIIT recognition process for you, allowing your startup to qualify for government tenders that would otherwise be out of reach.</p>
+        <a href="#" class="gtc-read-btn">Check the Best Offer </a>
       </div>
     </div>
   </div>
@@ -1071,42 +1236,47 @@
     <div class="owl-carousel gtc-service-slider moving-right">
       <!-- Vendor Assessment - Using verification/checkmark icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Assessment Icon" />
         <h4>GeM Vendor Assessment Support</h4>
-        <p>Expert guidance through Desktop and Video Assessment process for "Verified Seller" status. Achieving "Verified Seller" status is critical for many product categories.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Assessment Icon" />
+        
+        <p>Expert guidance through the Desktop and Video Assessment process conducted by agencies like RITES. Achieving "Verified Seller" status is critical for many product categories. We provide comprehensive guidance for the Desktop and Video Assessment conducted by agencies like RITES or Quality Council of India (QCI). We help you organize your manufacturing and process documents to ensure a "Pass" result on the first attempt.</p>
         <a href="#" class="gtc-read-btn">Read More</a>
       </div>
 
       <!-- Catalog Management - Using product listing/upload icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Catalog Icon" />
         <h4>Product & Service Catalog Management</h4>
-        <p>Professional uploading and optimization of product listings with keyword-optimized descriptions. A poorly listed product never sells.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Catalog Icon" />
+        
+        <p>Professional uploading and optimization of your product listings to ensure they appear in relevant buyer searches.A poorly listed product never sells. We offer professional cataloging services, including keyword-optimized descriptions, correct HSN code mapping, and high-quality image uploads. We ensure your products appear in the top search results when government buyers search for requirements.</p>
+        <a href="#" class="gtc-read-btn">	Know the Price — Click Here! </a>
       </div>
 
       <!-- OEM Panel - Using factory/manufacturing icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3067/3067256.png" alt="OEM Icon" />
         <h4>OEM Panel Creation</h4>
-        <p>Assisting manufacturers in establishing OEM Dashboard for brand control and reseller management. For manufacturers, controlling your brand on GeM is vital.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3067/3067256.png" alt="OEM Icon" />
+        
+        <p>Assisting manufacturers in establishing themselves as Original Equipment Manufacturers on GeM for better control over resellers.For manufacturers, controlling your brand on GeM is vital. We help you establish an OEM (Original Equipment Manufacturer) Dashboard, giving you the power to authorize resellers, manage brand integrity, and protect your market share from unauthorized sellers.</p>
+        <a href="#" class="gtc-read-btn">	Grab Your Deal Now </a>
       </div>
 
       <!-- L-1 Strategy - Using algorithm/ranking icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103655.png" alt="Strategy Icon" />
         <h4>L-1 Comparison Strategy</h4>
-        <p>Helping sellers understand algorithms behind L-1 selection for direct purchase orders. The GeM algorithm often selects the L-1 (lowest bidder) automatically for small orders.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/2103/2103655.png" alt="Strategy Icon" />
+        
+        <p>Helping sellers understand the algorithms behind L-1 (lowest bidder) selection for direct purchase orders.The GeM algorithm often selects the L-1 (lowest bidder) automatically for small orders. we strategize your pricing and product positioning to ensure your offerings are chosen for Direct Purchases and L-1 comparisons, increasing your sales volume without formal bidding.</p>
+        <a href="#" class="gtc-read-btn">	Show Me the Prices </a>
       </div>
 
       <!-- Incident Management - Using support/resolution icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/4343/4343103.png" alt="Incident Icon" />
         <h4>GeM Incident Management</h4>
-        <p>Advisory support to resolve show-cause notices or disputes on the GeM portal. Disputes or "Show Cause" notices on GeM can lead to account suspension.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/4343/4343103.png" alt="Incident Icon" />
+        
+        <p>: Providing advisory support to resolve show-cause notices or disputes on the GeM portal.Disputes or "Show Cause" notices on GeM can lead to account suspension. We provide expert advisory to help you respond to incidents, resolve buyer complaints, and manage the deviation process to keep your seller account in good standing.</p>
+        <a href="#" class="gtc-read-btn">Click & Save Big </a>
       </div>
     </div>
   </div>
@@ -1130,56 +1300,276 @@
     <div class="owl-carousel gtc-service-slider moving-left">
       <!-- Technical Bid - Using document/technical icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135677.png" alt="Technical Bid Icon" />
         <h4>Technical Bid Preparation</h4>
-        <p>Meticulous drafting of technical proposals to ensure 100% compliance with tender specifications. The technical bid is where most bidders fail.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135677.png" alt="Technical Bid Icon" />
+        
+        <p>Meticulous drafting of technical proposals to ensure 100% compliance with the "Technical Specifications" of the tender.The technical bid is where most bidders fail. We meticulously draft your technical proposal, ensuring every clause of the Tender Document is addressed. We cross-verify your specs with the tender’s "Technical Evaluation Matrix" to ensure you score maximum points.</p>
+        <a href="#" class="gtc-read-btn">Instant Price Reveal — Tap Here </a>
       </div>
 
       <!-- Financial Bid - Using finance/money icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135713.png" alt="Financial Bid Icon" />
         <h4>Financial Bid Strategy</h4>
-        <p>Guidance on preparing BOQ with focus on competitive yet profitable pricing strategies. Winning a tender isn't just about being the lowest bidder; it's about being the correct bidder.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135713.png" alt="Financial Bid Icon" />
+        
+        <p>Guidance on preparing Bill of Quantities (BOQ) with a focus on competitive yet profitable pricing.Winning a tender isn't just about being the lowest bidder; it’s about being the correct bidder. We analyze the Bill of Quantities (BOQ) and provide strategic pricing advice, considering taxes, overheads, and market trends to ensure your bid is competitive yet profitable.</p>
+        <a href="#" class="gtc-read-btn">See Your Deal Right Now </a>
       </div>
 
       <!-- Tender Analysis - Using analysis/magnifying glass icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2311/2311895.png" alt="Analysis Icon" />
         <h4>Tender Document Analysis</h4>
-        <p>Deep-dive review of lengthy tender documents to identify hidden eligibility criteria. Avoid the "Fine Print" trap.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/2311/2311895.png" alt="Analysis Icon" />
+        
+        <p>A deep-dive review of lengthy tender documents to identify hidden "Eligibility Criteria" and "Special Conditions. Avoid the "Fine Print" trap. We perform a deep-dive analysis of 100+ page tender documents to highlight critical eligibility criteria, hidden costs, and stringent delivery timelines, helping you decide whether a tender is worth your time and effort.</p>
+        <a href="#" class="gtc-read-btn">Click to Unlock Today’s Rates</a>
       </div>
 
       <!-- Compliance Audit - Using checklist/audit icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828643.png" alt="Compliance Icon" />
         <h4>Compliance Audit</h4>
-        <p>Final pre-submission check to ensure all documents are valid and correctly formatted. Before you hit "Submit," we perform a rigorous 360-degree audit of your entire bid package.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828643.png" alt="Compliance Icon" />
+        
+        <p>A final pre-submission check to ensure every document (GST, PAN, ITR, Experience Certificates) is valid and correctly formatted. Before you hit "Submit," we perform a rigorous 360-degree audit of your entire bid package. We check for expired certificates, incorrect formats, and missing annexures, ensuring your bid is 100% compliant and immune to technical disqualification.</p>
+        <a href="#" class="gtc-read-btn">Discover the Price Behind the Click </a>
       </div>
 
       <!-- JV Consulting - Using partnership/handshake icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/906/906794.png" alt="JV Icon" />
         <h4>JV & Consortium Consulting</h4>
-        <p>Strategizing partnerships to meet high-value tender requirements through joint ventures. If your company lacks a specific qualification, a partnership might be the answer.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906794.png" alt="JV Icon" />
+        
+        <p>Strategizing partnerships for businesses that need to pool resources to meet high-value tender requirements. If your company lacks a specific qualification, a partnership might be the answer. We help you draft JV agreements and Consortium bids that satisfy tender requirements while protecting your legal and financial interests.</p>
+        <a href="#" class="gtc-read-btn">Tap Now for Exclusive Pricing </a>
       </div>
 
       <!-- Pre-Bid Meeting - Using meeting/conference icon -->
       <div class="gtc-service-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176295.png" alt="Pre-Bid Icon" />
         <h4>Pre-Bid Meeting Representation</h4>
-        <p>Formulating queries and representing your interests during pre-bid conferences. We help you influence the tender terms before they are finalized.</p>
-        <a href="#" class="gtc-read-btn">Read More</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176295.png" alt="Pre-Bid Icon" />
+        
+        <p>Formulating queries and representing your interests during pre-bid conferences to seek favorable amendments.We help you influence the tender terms before they are finalized. By formulating strategic queries for pre-bid meetings, we challenge restrictive clauses and seek clarifications that make the tender more accessible for your business.</p>
+        <a href="#" class="gtc-read-btn">Reveal the Hidden Offer </a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SERVICES SECTION 4 - Advanced Bid Management -->
+<section class="gtc-services" style="background: #f8f9fa;">
+  <div class="gtc-container">
+    <div class="gtc-services-title">
+      <div>
+        <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" />
+      </div>
+      <div>
+        <h2>Advanced Bid Management</h2>
+      </div>
+      <div class="sir-logo">
+        <img src="imgs/sir3.jpeg" alt="Service Icon" />
+      </div>
+    </div>
 
+    <div class="owl-carousel gtc-service-slider moving-right">
+      <!-- E-Auction - Using auction/gavel icon -->
+      <div class="gtc-service-card">
+        <h4>E-Auction & Reverse Auction</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/9436/9436674.png" alt="Auction Icon" />
+        
+        <p>Real-time strategy and support during live bidding and price-drop sessions.The pressure of a live auction can lead to costly mistakes. We provide real-time support during Reverse Auctions, advising you on when to drop prices and when to hold, ensuring you secure the contract at the best possible margin.</p>
+        <a href="#" class="gtc-read-btn">Reveal Prices Right Away </a>
+      </div>
+
+      <!-- Tender Monitoring - Using monitoring/alert icon -->
+      <div class="gtc-service-card">
+        <h4>Tender Monitoring & Alerts</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565422.png" alt="Monitoring Icon" />
+        
+        <p>A personalized service to track and notify you of the most relevant upcoming tenders in your specific industry.Never miss an opportunity again. We provide customized tender alert services based on your specific keywords, regions, and budget, delivering the most relevant opportunities directly to your inbox.</p>
+        <a href="#" class="gtc-read-btn">Check Exclusive Rates Now </a>
+      </div>
+
+      <!-- Post-Bid Support - Using negotiation/support icon -->
+      <div class="gtc-service-card">
+        <h4>Post-Bid Support & Negotiation</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/906/906794.png" alt="Post-Bid Icon" />
+        
+        <p>Assistance in responding to "Technical Clarifications" asked by the department after the bid is opened.The process doesn't end at submission. We assist you in responding to "Shortfall Queries" and representing your firm during price negotiations with the Tender Committee, ensuring your bid remains in the running until the final award.</p>
+        <a href="#" class="gtc-read-btn">See What You’ll Pay Instantly </a>
+      </div>
+
+      <!-- PBG Advisory - Using bank guarantee/finance icon -->
+      <div class="gtc-service-card">
+        <h4>PBG Advisory</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135710.png" alt="PBG Icon" />
+        
+        <p>Guidance on the formalities of submitting security deposits and bank guarantees upon winning. Winning a contract comes with the responsibility of security deposits. We guide you through the formalities of issuing and submitting Performance Bank Guarantees (PBG) and Earnest Money Deposits (EMD) to ensure your contract is signed without delay.</p>
+        <a href="#" class="gtc-read-btn">Tap Here for Today’s Prices </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION 5 - Specialized Certifications & Intelligence -->
+<section class="gtc-services">
+  <div class="gtc-container">
+    <div class="gtc-services-title">
+      <div>
+        <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" />
+      </div>
+      <div>
+        <h2>Specialized Certifications & Intelligence</h2>
+      </div>
+      <div class="sir-logo">
+        <img src="imgs/sir3.jpeg" alt="Service Icon" />
+      </div>
+    </div>
+
+    <div class="owl-carousel gtc-service-slider moving-left"> 
+      <!-- ISO Certification - Using certification/badge icon -->
+      <div class="gtc-service-card">
+        <h4>ISO Certification Consulting</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996832.png" alt="ISO Icon" />
+        
+        <p>Helping businesses obtain ISO 9001, 14001, or 27001 to boost their "Technical Evaluation" score.Government tenders often award extra points for ISO certifications. We facilitate the process for ISO 9001 (Quality), 14001 (Environment), and 27001 (Information Security) to enhance your organization's credibility and technical score.</p>
+        <a href="#" class="gtc-read-btn">Check Prices Before They Change </a>
+      </div>
+
+      <!-- Competitor Analysis - Using competitor/analysis icon -->
+      <div class="gtc-service-card">
+        <h4>Competitor Bid Analysis</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/2311/2311895.png" alt="Analysis Icon" />
+        
+        <p>Analyzing previous winning rates of competitors to help you predict the "Winning Price" for future tenders.Knowledge is power. We analyze historical data of your competitors' winning prices and technical scores. This "Bid Intelligence" allows you to predict the L-1 price and tailor your strategy to stay ahead of the competition.</p>
+        <a href="#" class="gtc-read-btn">Click & Compare Instantly </a>
+      </div>
+
+      <!-- PSU Registration - Using PSU/government building icon -->
+      <div class="gtc-service-card">
+        <h4>Vendor Registration with PSUs</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609034.png" alt="PSU Icon" />
+        
+        <p>Assisting in getting empanelled with major PSUs like ONGC, BSNL, NHAI, and Railways. We help you get empanelled with major Public Sector Undertakings (PSUs) like Railways, NHAI, BSNL, HPCL, BPCL, IOCL, GAIL INDIA, GAIL GAS and ONGC. These registrations often allow you to receive limited tender inquiries directly from the departments.</p>
+        <a href="#" class="gtc-read-btn">See What You’ll Save </a>
+      </div>
+
+      <!-- Policy Interpretation - Using policy/document icon -->
+      <div class="gtc-service-card">
+        <h4>Policy Interpretation</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" alt="Policy Icon" />
+        
+        <p>: Expert advice on government policies like the "Make in India" (PPP-MII) preference and Purchase Preference Policies.Government policies like the "Public Procurement (Preference to Make in India)" can give you a massive advantage. We interpret these policies for your specific products, helping you claim purchase preference over foreign manufacturers.</p>
+        <a href="#" class="gtc-read-btn">Unlock the Best Price Today </a>
+      </div>
+
+      <!-- Tender Correction - Using correction/revision icon -->
+      <div class="gtc-service-card">
+        <h4>Tender Correction Services</h4>
+        <img src="https://cdn-icons-png.flaticon.com/512/5996/5996831.png" alt="Correction Icon" />
+        
+        <p>If your previous bids were rejected, we perform a "Post-Mortem" analysis. We identify exactly why you were disqualified and rectify your documentation process to ensure future success.</p>
+        <a href="#" class="gtc-read-btn">Get Instant Access to Prices </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- new serctipo test  -->
+  <section class="gtc-services" style="background: #f8f9fa;">
+    <div class="gtc-container">
+      <div class="gtc-services-title">
+        <div>
+          <img src="imgs/Googlies_Logo_1.png" alt="Googlies Logo" />
+        </div>
+        <div>
+          <h2>Tenders Only</h2>
+        </div>
+        <div class="sir-logo">
+          <img src="imgs/sir3.jpeg" alt="Service Icon" />
+        </div>
+      </div>
+
+
+
+      <div class="owl-carousel gtc-service-slider tenders-only-slider moving-right">
+        <!-- Plan A - Single Bid -->
+        <div class="tenders-only-card">
+          <h4>Single Bid (Trial Plan)</h4>
+          <img src="https://cdn-icons-png.flaticon.com/512/9206/9206228.png" alt="Single Bid Icon" />
+          
+          <p><strong style="color: #c4161c;">Best For:</strong> Occasional bidders or high-value one-time tenders.</p>
+          
+          <div class="price-box">
+            <div class="price-amount">₹7,500 + 2% Success Fee</div>
+            <p style="text-align: center; margin: 5px 0;"><strong>Tender Value:</strong> Up to ₹25 Lakhs</p>
+          </div>
+          
+          <div class="content-section">
+            <div class="feature-label inclusions-label">✓ Inclusions:</div>
+            <p class="feature-text">Technical Bid preparation, Document audit, Financial Bid guidance, RA support.</p>
+            
+            <div class="feature-label exclusions-label">✗ Exclusions:</div>
+            <p class="feature-text">EMD payment, Logistics, Site visits.</p>
+          </div>
+          
+          <p class="note-text">*Success fee charged only when the bidder gets technically qualified during Bid Evaluation.</p>
+          <a href="tel:+917011686021" class="gtc-read-btn">Discover Prices in One Tap</a>
+        </div>
+
+        <!-- Plan B - Monthly Retainer -->
+        <div class="tenders-only-card">
+          <h4>Monthly Retainer (Active Falcons)</h4>
+          <img src="https://cdn-icons-png.flaticon.com/512/1998/1998678.png" alt="Monthly Retainer Icon" />
+          
+          <p><strong style="color: #c4161c;">Best For:</strong> Resellers/OEMs who want to bid on 3-5 tenders every month.</p>
+          
+          <div class="price-box">
+            <div class="price-amount">₹10,000 / Month + 1% Success Fee</div>
+            <p style="text-align: center; margin: 5px 0;"><strong>Tender Value:</strong> Cumulative up to ₹1 Crore</p>
+          </div>
+          
+          <div class="content-section">
+            <div class="feature-label inclusions-label">✓ Inclusions:</div>
+            <p class="feature-text">Weekly Tender Alerts, unlimited Bid Search, Full management of 5 bids/month, Incident handling.</p>
+            
+            <div class="feature-label exclusions-label">✗ Exclusions:</div>
+            <p class="feature-text">Cost of DSC (Digital Signature), Bank Guarantees.</p>
+            
+            <div class="feature-label pros-label">⭐ Pros:</div>
+            <p class="feature-text">Steady income for you; professional "outsourced bidding department" for the client.</p>
+          </div>
+          
+          <p class="note-text">*Success fee charged only when the bidder gets technically qualified during Bid Evaluation.</p>
+          <a href="tel:+917011686021" class="gtc-read-btn">Click to View Hidden Deals </a>
+        </div>
+
+        <!-- Plan C - Elite -->
+        <div class="tenders-only-card">
+          <h4>Elite (Custom & High Value)</h4>
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135747.png" alt="Elite Plan Icon" />
+          
+          <p><strong style="color: #c4161c;">Best For:</strong> Turnkey projects, BOQ Bids, or Bids > ₹1 Crore.</p>
+          
+          <div class="price-box">
+            <div class="price-amount">₹20,000 / Month (Advance) + 0.5% Success Fee</div>
+            <p style="text-align: center; margin: 5px 0;"><strong>Tender Value:</strong> Above ₹1 Crore</p>
+          </div>
+          
+          <div class="content-section">
+            <div class="feature-label inclusions-label">✓ Inclusions:</div>
+            <p class="feature-text">Pre-bid meeting representation, Technical Deviation management, Legal compliance audit, Strategic pricing analysis based on historical L1 data.</p>
+            
+            <div class="feature-label limitations-label">⚠️ Limitations:</div>
+            <p class="feature-text" style="background: rgba(255, 152, 0, 0.1); padding: 8px; border-radius: 5px;">Max 2 such bids per month due to complexity.</p>
+          </div>
+          
+          <p class="note-text">*Success fee charged only when the bidder gets technically qualified during Bid Evaluation.</p>
+          <a href="tel:+917011686021" class="gtc-read-btn">Get Instant Access to Prices </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
     <!-- [SCROLLING CARDS SECTION - EXACTLY AS YOU HAVE IT] -->
     <div class="bni-scroll-wrapper">
@@ -2202,6 +2592,62 @@
         },
       });
 
+
+        $(document).ready(function(){
+        $('.tenders-only-slider').owlCarousel({
+          loop: true,
+          margin: 30,
+          nav: true,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            768: {
+              items: 1
+            },
+            992: {
+              items: 2
+            },
+            1200: {
+              items: 3
+            }
+          }
+        });
+      });
+    </script>
+          <script>
+        // 初始化Tenders Only轮播
+        $(document).ready(function(){
+          $('.tenders-only-slider').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              768: {
+                items: 1
+              },
+              992: {
+                items: 2
+              },
+              1200: {
+                items: 3
+              }
+            }
+          });
+        });
+      </script>
+<script>
       // Synchronized Hero Sliders for Two-Column Layout
       document.addEventListener("DOMContentLoaded", function () {
         const imageSlides = document.querySelectorAll(".hero-image-slide");
