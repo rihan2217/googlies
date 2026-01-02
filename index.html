@@ -778,6 +778,40 @@
           justify-content: center;
           align-items: center;
         }
+
+
+        /* Make cards smaller to fit 2 per row on mobile */
+@media (max-width: 768px) {
+  .gtc-service-card {
+    min-width: 200px !important;
+    width: 200px !important;
+    padding: 15px 12px;
+    min-height: 300px;
+  }
+  
+  .gtc-service-card h4 {
+    font-size: 12px;
+    height: 40px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+  }
+  
+  .gtc-service-card img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .gtc-service-card p {
+    font-size: 11px;
+    line-height: 1.3;
+    -webkit-line-clamp: 4;
+  }
+  
+  .gtc-read-btn {
+    padding: 5px 15px;
+    font-size: 11px;
+  }
+}
       </style>
   </head>
 
@@ -1494,7 +1528,7 @@
 
 
 
-      <div class="owl-carousel gtc-service-slider tenders-only-slider moving-right">
+      <div class="owl-carousel tenders-only-slider moving-right">
         <!-- Plan A - Single Bid -->
         <div class="tenders-only-card">
           <h4>Single Bid (Trial Plan)</h4>
@@ -2589,7 +2623,7 @@
           '<i class="fa fa-chevron-right"></i>',
         ],
         responsive: {
-          0: { items: 1 },
+          0: { items: 1.7 },
           768: { items: 2 },
           992: { items: 4 },
         },
@@ -3023,4 +3057,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   </body>
 </html>
-
