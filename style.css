@@ -23,7 +23,7 @@
            width: 100%;
            height: 104px;
            display: flex;
-           justify-content: space-between;
+           justify-content: space-around;
            align-items: center;
            gap: 24px;
            padding: 0 40px;
@@ -1233,13 +1233,13 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-33.33%);
+        transform: translateX(-39.33%);
     }
 }
 
 @keyframes slideLeft {
     0% {
-        transform: translateX(-33.33%);
+        transform: translateX(-39.33%);
     }
     100% {
         transform: translateX(0);
